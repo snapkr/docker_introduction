@@ -1,4 +1,5 @@
 # Example
 
 ## Concepts
-*  Docker compose
+*  Linking
+*  Network
