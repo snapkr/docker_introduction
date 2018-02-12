@@ -1,3 +1,6 @@
 # Example 1
-First docker image.
+
+## Concepts
+*  Dockerfile
+*  Basic Docker comamnds
 
