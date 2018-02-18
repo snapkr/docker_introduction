@@ -11,6 +11,11 @@ Start `Docker Quickstart Terminal`.
 
 Note: If this does not work start `Git Bash` and start the following script `C:\Program Files\Docker Toolbox\start.sh`. The latter will setup docker and connect your Docker client with the Docker server, which runs in an virtual machine on VirtualBox.
 
+For retreiving the ip of the boot2docker VM execute the following:
+````
+docker-machine ip
+````
+
 Verify that Docker is setup correctly by typing `docker version` after which you should see something similar to this:
 ```
 $ docker version
@@ -44,6 +49,8 @@ git clone https://github.com/snapkr/docker_introduction.git
 $ cd docker_introduction/
 ````
 
+#### Example 0
+*  
 #### Example 1
 *  Docker basics
 #### Example 2
