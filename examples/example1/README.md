@@ -41,3 +41,5 @@ The last command listed all running docker instances on your machine. Also if yo
 curl $(docker-machine ip):80
 curl $(docker-machine ip):81
 ````
+
+

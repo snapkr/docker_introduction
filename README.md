@@ -6,10 +6,10 @@
 *  Code Editor e.g. VS Code https://code.visualstudio.com/
 
 ### Setup:
-Content:
+
 Start `Docker Quickstart Terminal`.
 
-Note: If this does not work start `Git Bash` and start the following script `C:\Program Files\Docker Toolbox\start.sh`. The latter will setup docker and connect your Docker client with the Docker server, which runs in an virtual machine on VirtualBox.
+> Note: If this does not work do the following. Start `Git Bash` and execute the following script `C:\Program Files\Docker Toolbox\start.sh`. The latter will setup docker and connect your Docker client with the Docker server, which runs in an virtual machine on VirtualBox.
 
 For retreiving the ip of the boot2docker VM execute the following:
 ````
@@ -39,10 +39,15 @@ Server:
   OS/Arch:      linux/amd64
   Experimental: false
 
+
+
+### TODO
+
+
 ```
 
 After this change into a directory of your desire where we will save all relavant files.
-For this exersie we have to download a git project from GitHub. Do as follows in your directory:
+For this activity we have to download a git project from GitHub.
 
 ````
 git clone https://github.com/snapkr/docker_introduction.git
