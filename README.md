@@ -38,25 +38,13 @@ Server:
   Built:        Wed Jan 10 20:13:12 2018
   OS/Arch:      linux/amd64
   Experimental: false
-
-
-
-### TODO
-
-
 ```
 
-After this change into a directory of your desire where we will save all relavant files.
-For this activity we have to download a git project from GitHub.
+After this move into a directory of your choice where we will keep all relavant files for the following activites.
+For this activity we have to download two git projects from GitHub.
 
 ````
 git clone https://github.com/snapkr/docker_introduction.git
+git clone https://github.com/dockersamples/example-voting-app.git
 $ cd docker_introduction/
 ````
-
-#### Example 0
-*  
-#### Example 1
-*  Docker basics
-#### Example 2
-*  
