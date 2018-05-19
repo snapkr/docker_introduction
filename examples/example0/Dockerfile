@@ -5,6 +5,6 @@ RUN apt-get install -y nodejs
 
 ADD server.js .
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["/usr/bin/nodejs","/server.js"]
