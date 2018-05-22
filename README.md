@@ -1,5 +1,6 @@
 
 ## Setup Docker Toolbox
+> This setup is only needed if no access to an virtual machine is provided.
 
 ### Requirements:
 *  Docker Toolbox (Includes Docker, Virtualbox and git) https://docs.docker.com/toolbox/toolbox_install_windows/
