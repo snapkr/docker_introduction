@@ -37,7 +37,7 @@ docker run --net=backend-network alpine ping -c3 redis
 
 ### Connect Multiple Containers
 
-Now lets do some copy-pase work and spin up an application consisting of multiple containers and two neworks.
+Now lets do some copy&paste work and spin up an application consisting of multiple containers and two neworks. The architecture will look as follows with the `voting-app` and `results-app` being part of the `frontend-network` and `backend-network` and the remaining containers only to the `backend-network`.
 ![architecture](architecture.png)
 ````
 docker network create frontend-network
@@ -51,24 +51,30 @@ docker run -d --name=worker --net=backend-network caylent/example-voting-app:wor
 curl $(curl ipinfo.io/ip):5000 # vote app
 curl $(curl ipinfo.io/ip):5001 # results app
 ````
+You may notice that both frontend containers are also bound to the host network so we can see the web content. 
+
+Otherwise we now have an functioning application in two networks and consisting of 5 containers.  Setting up an application like this is quite tedious which is why you will see a better way of doing the same task with less repetitiveness when doing operational tasks on such application. But first let us cover some more basics.
 
 ### Create Aliases
+
+Usually a container is only reachable on an docker network via the assigned ip and name, if you wish to add a different name or need to add the same service twice you may use `aliases`
 ````
 docker network create frontend-network2
 docker network connect --alias db frontend-network2 redis
-docker run --net=frontend-network2 alpine ping -c1 db
+docker run --net=frontend-network2 alpine ping -c3 db
 ````
 
-### Disconnect Containers
+
+### Display Networks And Disconnect Containers
+
+If you have mingled for some time with docker networks you may want to know how many networks you have and what is connected to those networks. Have a look at those commands and ingest their output.
 ````
 docker network ls
 docker network inspect frontend-network
-docker network disconnect frontend-network redis
 
 ````
-
-### Putting it all together
+Now remove all the containers and networks you have created during this example.
 ````
-
-
+docker network disconnect <network name> <container name>
+docker network rm <network name>
 ````

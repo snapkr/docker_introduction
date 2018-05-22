@@ -9,6 +9,11 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 ````
 git clone https://github.com/dockersamples/example-voting-app
 cd example-voting-app
+````
+
+Now have a look at the `docker-compose.yml` file and compare what you see to what you have done during the last example. Otherwise you may execute this file see what is does for you.
+
+````
 # start the application
 docker-compose up
 # docker-compose will now download missing images and configure docker up until runtime.
