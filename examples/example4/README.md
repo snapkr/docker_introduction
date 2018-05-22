@@ -7,7 +7,7 @@ In this example we will be using `docker compose`.
 Docker Compose is a tool for defining and running multi-container Docker applications.
 
 ````
-git clone `https://github.com/dockersamples/example-voting-app`
+git clone https://github.com/dockersamples/example-voting-app
 cd example-voting-app
 # start the application
 docker-compose up
